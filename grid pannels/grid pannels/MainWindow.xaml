@@ -1,0 +1,39 @@
+﻿<Window x:Class="grid_pannels.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:grid_pannels"
+        mc:Ignorable="d"
+       Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <WrapPanel>
+            <Label Content="Naam atleet"></Label>
+
+        </WrapPanel>
+        
+        
+    </StackPanel>
+    <Grid Margin="10,0,10,4">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width ="132*"/>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="234*"/>
+            <ColumnDefinition Width="245*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Snelste atleet" Grid.Column="3" Margin="145,244,25,161"/>
+        <Button Grid.Column="3" Content="Nieuwe" Margin="145,205,25,201" Click="Button_Click" RenderTransformOrigin="0.4,0.168"/>
+        <Button Grid.Column="3" Content="Wissen" Margin="145,290,25,120"/>
+        <Button Grid.Column="3" Content="Afsluiten" Margin="145,335,25,71"/>
+        <TextBox Grid.Column="2" Margin="43,64,74,0" Height="20" VerticalAlignment="Top" TextChanged="TextBox_TextChanged_2" />
+        <TextBox Grid.Column="2" Margin="43,104,74,0" Height="20" VerticalAlignment="Top" TextChanged="TextBox_TextChanged_2" />
+        <Label Grid.Column="1" Content="Naam atleet" HorizontalAlignment="Left" Margin="73,64,0,0" VerticalAlignment="Top" Width="94" Grid.ColumnSpan="2" Height="26"/>
+        <Label Grid.Column="1" Content="Label" HorizontalAlignment="Left" Margin="127,114,0,0" VerticalAlignment="Top" Height="26" Width="2"/>
+        <Label Grid.Column="1" Content="Totaal aantal secondes" HorizontalAlignment="Left" Margin="34,101,0,0" VerticalAlignment="Top" Width="138" Grid.ColumnSpan="2" Height="26"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="189" Margin="64,215,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="374" Background="#FFC1C1C1" TextChanged="TextBox_TextChanged_3"/>
+
+    </Grid>
+
+</Window>
